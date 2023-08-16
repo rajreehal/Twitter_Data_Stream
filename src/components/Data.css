@@ -1,0 +1,28 @@
+.data-container {
+    display: flex;
+    padding-left: 5px;
+}
+
+.popular-tweets {
+    flex: 50%;
+}
+
+.popular-users {
+    flex: 50%;
+}
+
+.user_lists_headings {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.user_lists_data {
+    margin-top: 5px;
+}
+
+.tweet_img {
+    text-align: left;
+    border-radius: 50%;
+    max-width: 3rem;
+    max-height: 3rem;
+}

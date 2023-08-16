@@ -1,0 +1,116 @@
+
+
+/* * {
+    font-family: 'Lato', sans-serif;
+} */
+
+.tracker {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+.keyword-search {
+    flex: 40%;
+}
+
+.keyword-list {
+    flex: 60%
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  color: #42486e;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.btn {
+  background: #8a8eac;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  margin: auto auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  width: 50%;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-endstream {
+  background: #e94310;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  padding: 3px 0px;
+  font-size: 14px;
+  border: 0;
+  border-bottom:1px solid #ccc;
+}
+
+.not-streaming-message {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.streamed-keyword {
+  display: flex;
+  align-items: left;
+  margin: 30px;
+  background-color: #fafafa;
+  border-radius: 2%;
+  box-shadow: 2px 2px #EAEAEA;
+  padding: 10px 5px;
+}
+
+.streamed-info {
+  flex: 75%;
+  margin-left: 10px;
+}
+
+.streamed-endstream {
+  flex: 25%;
+  text-align: right;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}

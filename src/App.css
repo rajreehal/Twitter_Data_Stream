@@ -1,0 +1,9 @@
+.container-screenshift-navbar {
+    margin-left: 50px;
+    transition: 250ms;
+}
+
+.container-screenshift-navbar-closed {
+    margin-left: 220px;
+    transition: 250ms;
+}
