@@ -1,0 +1,12 @@
+# This Dockerfile builds the API only.
+
+FROM python:3.8.5
+WORKDIR /app
+
+COPY api/requirements.txt api/api.py api/.flaskenv api/config.py api/models.py api/routes.py ./
+COPY ./api/nltk_data /usr/local/nltk_data
+RUN pip install -r ./requirements.txt
+ENV FLASK_ENV production
+
+EXPOSE 5000
+CMD ["gunicorn", "-b", ":5000", "api:app"]

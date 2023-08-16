@@ -1,0 +1,28 @@
+version: "3.0"
+volumes:
+  data:
+
+services:
+  api:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.api
+    image: 925374216644.dkr.ecr.us-east-2.amazonaws.com/gossipdata:gd-api
+    depends_on:
+      - redis
+    env_file: .env
+  client:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.client
+    image: 925374216644.dkr.ecr.us-east-2.amazonaws.com/gossipdata:gd-client
+    ports:
+      - "80:80"
+    depends_on:
+      - redis
+  redis:
+    image: 925374216644.dkr.ecr.us-east-2.amazonaws.com/gossipdata:redis
+    volumes:
+      - data:/data
+    ports:
+      - 6379:6379
